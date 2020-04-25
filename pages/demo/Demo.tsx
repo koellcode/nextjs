@@ -10,3 +10,5 @@ export const Hello = ({ compiler, framework }: HelloProps) => (
     Hello from {compiler} and {framework}!
   </h1>
 );
+
+export default Hello;
