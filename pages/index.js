@@ -1,6 +1,8 @@
 import Head from "next/head";
 import styled from "styled-components";
 import { Hello } from "./demo";
+import Loader from "./loader";
+
 import VercelSVG from "../public/vercel.svg";
 
 const Container = styled.div`
@@ -31,6 +33,7 @@ const Home = () => (
 
     <Main>
       <Hello compiler="tcs" framework="react" />
+      <Loader />
     </Main>
 
     <footer>

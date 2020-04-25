@@ -11,9 +11,11 @@ const Heading = styled.h1`
 `;
 
 export const Hello = ({ compiler, framework }: HelloProps) => (
-  <Heading>
-    Hello from {compiler} and {framework}!
-  </Heading>
+  <>
+    <Heading>
+      Hello from {compiler} and {framework}!
+    </Heading>
+  </>
 );
 
 export default Hello;
