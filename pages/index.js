@@ -29,9 +29,9 @@ const Home = () => (
       <link rel="icon" href="/favicon.ico" />
     </Head>
 
-    <main>
+    <Main>
       <Hello compiler="tcs" framework="react" />
-    </main>
+    </Main>
 
     <footer>
       <a
