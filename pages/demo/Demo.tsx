@@ -7,7 +7,7 @@ export interface HelloProps {
 }
 
 const Heading = styled.h1`
-  color: ${(props: any) => props.theme.colors.primary};
+  color: ${(props: any) => props.theme.text};
 `;
 
 export const Hello = ({ compiler, framework }: HelloProps) => (
