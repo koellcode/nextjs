@@ -1,6 +1,7 @@
 import Head from "next/head";
-import { Hello } from "./demo";
 import styled from "styled-components";
+import { Hello } from "./demo";
+import VercelSVG from "../public/vercel.svg";
 
 const Container = styled.div`
   min-height: 100vh;
@@ -38,7 +39,7 @@ const Home = () => (
         target="_blank"
         rel="noopener noreferrer"
       >
-        Powered by <img src="/vercel.svg" alt="Vercel Logo" />
+        Powered by <VercelSVG style={{ fill: "var(--color-text)" }} />
       </a>
     </footer>
   </Container>
