@@ -1,8 +1,27 @@
 import Head from "next/head";
 import { Hello } from "./demo";
+import styled from "styled-components";
+
+const Container = styled.div`
+  min-height: 100vh;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
+
+const Main = styled.main`
+  padding: 5rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
 
 const Home = () => (
-  <div className="container">
+  <Container>
     <Head>
       <title>Create Next App</title>
       <link rel="icon" href="/favicon.ico" />
@@ -23,24 +42,6 @@ const Home = () => (
     </footer>
 
     <style jsx>{`
-      .container {
-        min-height: 100vh;
-        padding: 0 0.5rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-
-      main {
-        padding: 5rem 0;
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-
       footer {
         width: 100%;
         height: 100px;
@@ -162,7 +163,7 @@ const Home = () => (
         box-sizing: border-box;
       }
     `}</style>
-  </div>
+  </Container>
 );
 
 export default Home;
