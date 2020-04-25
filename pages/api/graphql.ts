@@ -9,7 +9,7 @@ const typeDefs = gql`
 
 const resolvers = {
   Query: {
-    hello: async (_parent: any, _args: any, _context: any): String => {
+    hello: async (_parent: any, _args: any, _context: any): Promise<String> => {
       await delay(2000);
       return "Hello!";
     },
