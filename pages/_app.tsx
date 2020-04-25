@@ -1,7 +1,7 @@
 import App from "next/app";
 import React from "react";
 import { ThemeProvider } from "styled-components";
-import { GlobalStyle, theme } from "./styles";
+import { GlobalStyle, theme } from "../etc/styles";
 
 export default class MyApp extends App {
   public render() {
